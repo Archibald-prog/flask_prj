@@ -12,7 +12,7 @@ cursor = connection.cursor()
 
 @app.route('/')
 def index():
-    res = requests.get('http://127.0.0.1:8000/posts/')
+    res = requests.get('https://test-blog-api-u3ky.onrender.com/posts/')
     statement = f"INSERT INTO {TABLE_NAME}(title, body, owner) values(?, ?, ?)"
 
     for el in json.loads(res.content.decode(encoding='utf-8')):
