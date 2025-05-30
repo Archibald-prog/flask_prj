@@ -49,8 +49,7 @@ def get_all_posts():
     statement = f"INSERT INTO {TABLE_NAME}(title, body, owner) values(?, ?, ?)"
 
     try:
-        data = response.json()
-        for el in data:
+        for el in response.json():
             cursor.execute(statement,
                            (el['title'], el['description'], el['author']))
             connection.commit()
