@@ -15,8 +15,8 @@ userdata = {
     "password": "admin",
     "email": "admin@example.com"
 }
-token_create_endpoint = "http://127.0.0.1:8000/auth/token/login/"
-post_list_endpoint = "http://127.0.0.1:8000/posts/"
+token_create_endpoint = "https://test-blog-api-vmxh.onrender.com/auth/token/login/"
+post_list_endpoint = "https://test-blog-api-vmxh.onrender.com/posts/"
 
 
 def get_access_token():
